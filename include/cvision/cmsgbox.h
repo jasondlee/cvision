@@ -2,8 +2,8 @@
 // Created by Bob on 2/2/26.
 //
 
-#ifndef TVISION_CMSGBOX_H
-#define TVISION_CMSGBOX_H
+#ifndef CMSGBOX_H
+#define CMSGBOX_H
 
 #include "ctypes.h"
 #include "cobjects.h"
@@ -57,4 +57,4 @@ void tv_msgboxtext_set_confirm(const char *text);
 }
 #endif
 
-#endif //TVISION_CMSGBOX_H
+#endif //CMSGBOX_H

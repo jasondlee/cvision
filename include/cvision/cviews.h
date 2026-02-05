@@ -2,8 +2,8 @@
 // Created by Jason Lee on 2/2/26.
 //
 
-#ifndef TVISION_C2VIEWS_H
-#define TVISION_C2VIEWS_H
+#ifndef C2VIEWS_H
+#define C2VIEWS_H
 
 #include "ctypes.h"
 
@@ -296,4 +296,4 @@ void tv_window_shutdown(tv_Window* window);
 }
 #endif
 
-#endif //TVISION_C2VIEWS_H
+#endif //C2VIEWS_H

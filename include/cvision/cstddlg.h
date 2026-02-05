@@ -3,8 +3,8 @@
 // C wrappers for Turbo Vision standard dialog classes
 //
 
-#ifndef TVISION_CSTDDLG_H
-#define TVISION_CSTDDLG_H
+#ifndef CSTDDLG_H
+#define CSTDDLG_H
 
 #include "ctypes.h"
 #include "cobjects.h"
@@ -154,4 +154,4 @@ void tv_chdirdialog_shutdown(tv_ChDirDialog* dialog);
 }
 #endif
 
-#endif /* TVISION_CSTDDLG_H */
+#endif /* CSTDDLG_H */

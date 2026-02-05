@@ -2,8 +2,8 @@
 // Created by Jason Lee on 1/28/26.
 //
 
-#ifndef TVISION_CTYPES_H
-#define TVISION_CTYPES_H
+#ifndef CTYPES_H
+#define CTYPES_H
 
 #define Uses_EventCodes
 #define Uses_fpbase
@@ -234,4 +234,4 @@ typedef struct {
 }
 #endif
 
-#endif //TVISION_CTYPES_H
+#endif //CTYPES_H

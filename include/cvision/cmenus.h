@@ -2,8 +2,8 @@
 // Created by Jason Lee on 2/2/26.
 //
 
-#ifndef TVISION_CMENUS_H
-#define TVISION_CMENUS_H
+#ifndef CMENUS_H
+#define CMENUS_H
 
 #ifdef __cplusplus
 extern "C" {
@@ -35,4 +35,4 @@ extern "C" {
 }
 #endif
 
-#endif //TVISION_CMENUS_H
+#endif //CMENUS_H

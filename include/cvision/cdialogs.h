@@ -2,8 +2,8 @@
 // Created by Bob on 2/1/26.
 //
 
-#ifndef TVISION_CDIALOGS_H
-#define TVISION_CDIALOGS_H
+#ifndef CDIALOGS_H
+#define CDIALOGS_H
 
 #include "ctypes.h"
 #include "cobjects.h"
@@ -129,6 +129,6 @@ void tv_historywindow_get_selection(tv_HistoryWindow* window, char* dest);
 }
 #endif
 
-#endif //TVISION_CDIALOGS_H
+#endif //CDIALOGS_H
 
 // Made with Bob

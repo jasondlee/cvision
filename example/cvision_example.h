@@ -2,8 +2,8 @@
 // Created by Jason Lee on 2/2/26.
 //
 
-#ifndef TVISION_CVISION_EXAMPLE_H
-#define TVISION_CVISION_EXAMPLE_H
+#ifndef CVISION_EXAMPLE_H
+#define CVISION_EXAMPLE_H
 
 #include "cvision/ctypes.h"
 
@@ -24,4 +24,4 @@ tv_StatusLine *createStatusLine(tv_Rect r);
 void fileNew();
 void fileOpen();
 
-#endif //TVISION_CVISION_EXAMPLE_H
+#endif //CVISION_EXAMPLE_H

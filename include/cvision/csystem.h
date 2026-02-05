@@ -2,8 +2,8 @@
 // Created by Jason Lee on 2/2/26.
 //
 
-#ifndef TVISION_CSYSTEM_H
-#define TVISION_CSYSTEM_H
+#ifndef CSYSTEM_H
+#define CSYSTEM_H
 
 #include "ctypes.h"
 #include "cobjects.h"
@@ -144,4 +144,4 @@ void tv_systemerror_set_ctrl_break_hit(tv_bool value);
 }
 #endif
 
-#endif //TVISION_CSYSTEM_H
+#endif //CSYSTEM_H

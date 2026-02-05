@@ -2,8 +2,8 @@
 // Created by Bob on 2/1/26.
 //
 
-#ifndef TVISION_CEDITORS_H
-#define TVISION_CEDITORS_H
+#ifndef CEDITORS_H
+#define CEDITORS_H
 
 #include "ctypes.h"
 #include "cobjects.h"
@@ -210,6 +210,6 @@ const char* tv_editwindow_get_title(tv_EditWindow* editwindow, short max_size);
 }
 #endif
 
-#endif //TVISION_CEDITORS_H
+#endif //CEDITORS_H
 
 // Made with Bob

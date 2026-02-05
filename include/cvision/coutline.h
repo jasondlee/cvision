@@ -4,8 +4,8 @@
 // C wrappers for TOutline and TOutlineViewer classes
 //
 
-#ifndef TVISION_COUTLINE_H
-#define TVISION_COUTLINE_H
+#ifndef COUTLINE_H
+#define COUTLINE_H
 
 #include "ctypes.h"
 #include "cobjects.h"
@@ -73,4 +73,4 @@ tv_bool tv_outline_has_children(tv_Outline* outline, tv_Node* node);
 }
 #endif
 
-#endif //TVISION_COUTLINE_H
+#endif //COUTLINE_H

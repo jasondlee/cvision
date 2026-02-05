@@ -2,8 +2,8 @@
 // Created by Jason Lee on 1/28/26.
 //
 
-#ifndef TVISION_CVISION_H
-#define TVISION_CVISION_H
+#ifndef CVISION_H
+#define CVISION_H
 #include "ceditors.h"
 
 #include "cstddlg.h"
@@ -46,7 +46,7 @@ void tv_application_run(tv_Application *app);
 ushort tv_application_exec_dialog(tv_Application *app, tv_FileDialog *d, void *data);
 tv_EditWindow *tv_application_open_editor(tv_Application *app, const char *fileName, tv_bool visible);
 
-#endif //TVISION_CVISION_H
+#endif //CVISION_H
 
 #ifdef __cplusplus
 }
