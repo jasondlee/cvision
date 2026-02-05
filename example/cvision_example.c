@@ -28,17 +28,6 @@ tv_StatusLine *createStatusLine(const tv_Rect r) {
 }
 
 tv_MenuBar *createMenuBar(tv_Rect r) {
-    /* Create menu items */
-    // tv_SubMenu *about_menu = tv_submenu_create("~\xF0~",  tv_kbAltSpace);
-    // tv_submenu_add_menuitem(about_menu, tv_menuitem_create("~A~bout...", cmAbout,  tv_kbAltA, NULL, NULL));
-    //
-    //
-    // tv_SubMenu *file_menu = tv_submenu_create("~F~ile",  tv_kbAltF);
-    // tv_submenu_add_menuitem(file_menu, tv_menuitem_create("~N~ew Window", cmNewWindow,  tv_kbF2, NULL, NULL));
-    // tv_submenu_add_menuitem(file_menu, tv_menuitem_create("~L~ist Demo", cmListDemo,  tv_kbF3, NULL, NULL));
-    // tv_submenu_add_menuitem(file_menu, tv_menuitem_create("~E~ditor Demo", cmEditorDemo,  tv_kbF4, NULL, NULL));
-    // tv_submenu_add_menuitem(file_menu, tv_menuitem_create("E~x~it", cmQuit, 0, NULL, NULL));
-
     tv_SubMenu *sub1 = tv_submenu_create ( "~F~ile", tv_kbAltF);
     tv_submenu_add_menuitem(sub1, tv_menuitem_create("~O~pen", cmOpen, tv_kbF3, hcNoContext, "F3",
   tv_menuitem_create("~N~ew", cmNew, tv_kbCtrlN, hcNoContext, "Ctrl-N",
