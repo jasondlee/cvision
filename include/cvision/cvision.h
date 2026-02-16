@@ -22,11 +22,16 @@ public:
                   void (*handleEventFunc)(TEvent));
 
     void handleEvent(TEvent &event) override;
-    virtual ushort execDialog( TDialog *d, void *data );
     TEditWindow *openEditor( const char *fileName, Boolean visible );
+
 private:
     void (*cHandleEvent)(TEvent);
 };
+
+ushort execDialog( TDialog *d, void *data );
+TDialog *createFindDialog();
+TDialog *createReplaceDialog();
+ushort doEditDialog( int dialog, ... );
 
 extern "C" {
 #endif

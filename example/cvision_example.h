@@ -7,7 +7,7 @@
 
 #include "cvision/ctypes.h"
 
-tv_Application *app;
+tv_Application *example_app;
 
 /* Command constants */
 const ushort

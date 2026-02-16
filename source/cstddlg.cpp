@@ -303,8 +303,11 @@ void tv_fileinfopane_handle_event(tv_FileInfoPane* pane, tv_Event* event) {
 
 /* TFileDialog functions */
 
-tv_FileDialog* tv_filedialog_create(const char* wildcard, const char* title, 
-                                     const char* input_name, tv_ushort options, tv_uchar hist_id) {
+tv_FileDialog *tv_filedialog_create(const char *wildcard,
+                                    const char *title,
+                                    const char *input_name,
+                                    tv_ushort options,
+                                    tv_uchar hist_id) {
     return reinterpret_cast<tv_FileDialog*>(
         new TFileDialog(wildcard, title, input_name, options, hist_id)
     );

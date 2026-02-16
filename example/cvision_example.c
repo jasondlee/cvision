@@ -9,8 +9,6 @@
 #include "cvision/cmenus.h"
 #include "cvision/ceditors.h"
 #include "cvision/ctkeys.h"
-#include "cvision/cviews.h"
-#include "cvision/cmsgbox.h"
 #include "cvision/cstddlg.h"
 #include <stdio.h>
 #include <stdlib.h>
@@ -40,7 +38,7 @@ tv_MenuBar *createMenuBar(tv_Rect r) {
       //, "Ctrl-Q" );
 
     tv_SubMenu *sub2 = tv_submenu_create ( "~E~dit", tv_kbAltE);
-      tv_submenu_add_menuitem(sub2, 
+      tv_submenu_add_menuitem(sub2,
           tv_menuitem_create( "~U~ndo", cmUndo, tv_kbCtrlU, hcNoContext, "Ctrl-U",
            // newLine() +
       tv_menuitem_create( "Cu~t~", cmCut, tv_kbShiftDel, hcNoContext, "Shift-Del",
@@ -76,25 +74,26 @@ tv_MenuBar *createMenuBar(tv_Rect r) {
 
 void handleEvent(tv_Event event) {
     if (event.what == cmQuit) {
-        tv_application_destroy(app);
+        tv_application_destroy(example_app);
     }
 
-    if( event.what != evCommand )
+    if( event.what != evCommand ) {
         return;
-    else
+    } else {
         switch( event.data.message.command ) {
-        case cmOpen:
+            case cmOpen:
                 fileOpen();
                 break;
-        case cmNew:
+            case cmNew:
                 fileNew();
                 break;
-        case cmChangeDrct:
+            case cmChangeDrct:
                 // changeDir();
                 break;
-        default:
+            default:
                 return ;
         }
+    }
 
     event.what = evNothing;
 
@@ -119,28 +118,28 @@ void fileOpen() {
     tv_FileDialog* fd = tv_filedialog_create( "*.*", "Open file", "~N~ame",
         tv_fdOpenButton, 100 );
 
-    if( tv_application_exec_dialog( app, fd, fileName ) != cmCancel ) {
-        tv_application_open_editor( app, fileName, 1 );
+    if( tv_application_exec_dialog( example_app, fd, fileName ) != cmCancel ) {
+        tv_application_open_editor( example_app, fileName, 1 );
     }
 }
 
 void fileNew()
 {
-    tv_application_open_editor( app, 0, 1 );
+    tv_application_open_editor( example_app, 0, 1 );
 }
 
 int main(void) {
-    app = tv_application_create(createStatusLine, createMenuBar, handleEvent);
+    example_app = tv_application_create(createStatusLine, createMenuBar, handleEvent);
 
-    if (!app) {
+    if (!example_app) {
         fprintf(stderr, "Failed to create application\n");
         return 1;
     }
 
-    tv_application_run(app);
+    tv_application_run(example_app);
 
     /* Clean up application */
-    tv_application_destroy(app);
+    tv_application_destroy(example_app);
 
     return 0;
 }
