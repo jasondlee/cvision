@@ -7,8 +7,6 @@
 #define CSTDDLG_H
 
 #include "ctypes.h"
-#include "cobjects.h"
-#include "csystem.h"
 
 #ifdef __cplusplus
 extern "C" {

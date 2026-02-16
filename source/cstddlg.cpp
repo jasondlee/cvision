@@ -3,8 +3,6 @@
 // C wrappers for Turbo Vision standard dialog classes
 //
 
-#include "cvision/cobjects.h"
-#include "cvision/csystem.h"
 #include "cvision/ctypes.h"
 #include "cvision/cstddlg.h"
 #include <tvision/tv.h>

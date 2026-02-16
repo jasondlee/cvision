@@ -8,8 +8,6 @@
 
 #include "cstddlg.h"
 #include "ctypes.h"
-#include "csystem.h"
-#include "cobjects.h"
 
 #ifdef __cplusplus
 #include <tvision/tv.h>

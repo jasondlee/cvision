@@ -3,7 +3,6 @@
 //
 
 #include "cvision/ctypes.h"
-#include "cvision/cvision.h"
 #include "cvision/cobjects.h"
 #include <tvision/tv.h>
 

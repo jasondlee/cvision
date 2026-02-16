@@ -5,7 +5,6 @@
 #include "cvision/csystem.h"
 #include "cvision/cvision.h"
 #include <tvision/tv.h>
-#include <cstddef>
 
 extern "C" {
 

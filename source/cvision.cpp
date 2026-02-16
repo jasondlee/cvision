@@ -4,12 +4,9 @@
 
 #include "cvision/ctypes.h"
 #include "cvision/cvision.h"
-
-#include <strstream>
-
 #include "cvision/cstddlg.h"
-#include "cvision/csystem.h"
 #include <tvision/tv.h>
+#include <strstream>
 
 tv_Application *tv_app;
 typedef char *charPtr;

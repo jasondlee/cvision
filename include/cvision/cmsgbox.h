@@ -6,7 +6,6 @@
 #define CMSGBOX_H
 
 #include "ctypes.h"
-#include "cobjects.h"
 
 #ifdef __cplusplus
 extern "C" {

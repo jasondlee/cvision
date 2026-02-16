@@ -4,8 +4,6 @@
 // C wrappers for TOutline and TOutlineViewer classes
 //
 
-#include "cvision/cobjects.h"
-#include "cvision/csystem.h"
 #include "cvision/coutline.h"
 #include "cvision/cvision.h"
 #include <tvision/tv.h>

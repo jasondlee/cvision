@@ -10,9 +10,11 @@
 #include "cvision/ceditors.h"
 #include "cvision/ctkeys.h"
 #include "cvision/cstddlg.h"
+#include "cvision/cconsts.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+
 
 tv_StatusLine *createStatusLine(const tv_Rect r) {
     tv_StatusItem *items =

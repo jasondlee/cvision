@@ -4,7 +4,6 @@
 
 #include "cvision/cdialogs.h"
 #include "cvision/ctypes.h"
-#include "cvision/cobjects.h"
 #include <tvision/tv.h>
 #include <cstdarg>
 
