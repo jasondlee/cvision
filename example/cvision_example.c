@@ -16,11 +16,19 @@
 
 tv_StatusLine *createStatusLine(const tv_Rect r) {
     tv_StatusItem *items =
-            tv_statusitem_create("~F2~ New", tv_kbF2, cmNewWindow,
-                                 tv_statusitem_create("~F3~ List",  tv_kbF3, cmListDemo,
-                                                      tv_statusitem_create("~F4~ Editor",  tv_kbF4, cmEditorDemo,
-                                                                           tv_statusitem_create(
-                                                                               "~Alt+X~ Exit", 0, cmQuit, NULL))));
+            tv_statusitem_create(
+             0, tv_kbAltX, cmQuit,
+        tv_statusitem_create("~F2~ Save", tv_kbF2, cmSave,
+        tv_statusitem_create("~F3~ Open", tv_kbF3, cmOpen,
+        tv_statusitem_create("~Ctrl-W~ Close", tv_kbAltF3, cmClose,
+        tv_statusitem_create("~F5~ Zoom", tv_kbF5, cmZoom,
+        tv_statusitem_create("~F6~ Next", tv_kbF6, cmNext,
+        tv_statusitem_create("~F10~ Menu", tv_kbF10, cmMenu,
+        tv_statusitem_create(0, tv_kbShiftDel, cmCut,
+        tv_statusitem_create(0, tv_kbCtrlIns, cmCopy,
+        tv_statusitem_create(0, tv_kbShiftIns, cmPaste,
+        tv_statusitem_create(0, tv_kbCtrlF5, cmResize ,
+            NULL )))))))))));
 
     return tv_statusline_create(tv_rect_create(r.a.x, r.b.y - 1, r.b.x, r.b.y), items);
 }
